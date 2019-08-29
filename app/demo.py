@@ -4,7 +4,7 @@ import os
 import socket
 
 app = Flask(__name__)
-os.environ['DATABASE_URI'] = 'mysql://amadeu:pitagoras@db-amadeu/dexter'
+os.environ['DATABASE_URI'] = 'mysql://amadeu:pitagoras@db/dexter'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URI']
 db = SQLAlchemy(app)
 hostname = socket.gethostname()
