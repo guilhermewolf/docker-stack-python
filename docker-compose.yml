@@ -2,14 +2,14 @@
 version: '3.7'
 services:
   app:
-    image: "app-amadeu"
+    image: app-amadeu
     deploy:
       placement:
         constraints: [node.role == manager]
     networks:
       - amadeu-net
   db:
-    image: "mysql"
+    image: mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=4linux
       - MYSQL_USER=amadeu
@@ -20,4 +20,3 @@ services:
 networks:
   amadeu-net:
     external: true
-
