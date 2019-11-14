@@ -4,6 +4,8 @@ Criar rede 'amadeu-net' com driver overlay
 
 Buildar a imagem
 
+Enviar a imagem para o seu repositorio (ex: DockerHub)
+
 Editar docker-compose.yml
 - Adicionar 3 replicas do app
 - App na porta 9000
